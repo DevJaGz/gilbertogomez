@@ -1,0 +1,416 @@
+.navbar-toggler:hover {
+    color: rgb(190, 190, 190) !important;
+}
+
+.navbar-toggler:active {
+    color: rgba(255, 255, 255, 0.5) !important;
+}
+
+.navbar-nav>li {
+    margin-left: 0.25rem;
+
+}
+
+.navbar {
+    padding-top   : 0.15rem;
+    padding-bottom: 0.15rem;
+
+}
+
+.navbar-nav li a span {
+    margin-right: 10px;
+}
+
+.fs-5 {
+    font-size: 1.15rem !important;
+}
+
+
+
+.MainText {
+    width : 100%;
+    height: 100vh;
+    background:
+        linear-gradient(0deg,
+            rgba(0, 0, 0, 0.1),
+            rgba(0, 0, 0, 0.05)),
+        url("../img/works.jpeg");
+    background-size  : cover;
+    background-repeat: no-repeat;
+    position         : relative;
+}
+
+
+
+.MsgInside {
+    text-align    : left;
+    position      : absolute;
+    padding-left  : 10%;
+    color         : #fff;
+    text-rendering: optimizeLegibility;
+    text-shadow   :
+        2px 2px 0px rgba(0, 0, 0, 0.5),
+        3px 3px 10px rgba(0, 0, 0, 0.8);
+
+    /* text-shadow           : #000 0px 0px 1px; */
+    -webkit-font-smoothing   : antialiased;
+    font-size                : 8vw 8vh;
+    /* letter-spacing        : 1vw; */
+    padding-top              : 5.5rem;
+    padding-bottom           : 5%;
+    box-sizing               : border-box;
+    transition               : 1s;
+}
+
+.MainName {
+    /* text-shadow:
+        0px 2px 50px rgba(255, 255, 255, 0.5),
+        0px 3px 200px rgba(255, 255, 255, 0.8); */
+    letter-spacing: 0.5vw;
+    font-size     : 2.2rem !important;
+
+}
+
+
+
+.ContentMenu {
+    display       : flex;
+    flex-direction: column;
+    text-align    : justify;
+    padding       : 0;
+
+}
+
+.Content-titles {
+    display        : flex;
+    flex-direction : column;
+    align-items    : center;
+    justify-content: center;
+    margin-top     : 100px;
+    margin-bottom  : 50px;
+}
+
+.Quien-es>.Content-titles {
+    color              : #fff;
+    opacity            : 0;
+    transition         : 0.6s;
+    transition-property: opacity;
+    padding-top        : 20px;
+    margin-top         : 0;
+    margin-bottom      : 0;
+}
+
+.ContentMenu p {
+    margin-top   : 10px;
+    margin-bottom: 10px;
+}
+
+.MainIcon {
+    font-size: 25px;
+}
+
+.Quien-es {
+    display            : flex;
+    flex-direction     : column;
+    justify-content    : center;
+    align-items        : center;
+    padding-bottom     : 0;
+    background         : rgba(33, 37, 41);
+    /* background-image: url('../img/works.jpeg'); */
+    background-size    : fixed;
+    transition         : 0.2s;
+}
+
+.Card {
+    position       : relative;
+    background     : rgba(33, 37, 41, 0.8);
+    width          : 700px;
+    height         : 350px;
+    display        : flex;
+    justify-content: flex-start;
+    align-items    : center;
+    border-radius  : 20px;
+    margin-top     : 50px;
+    margin-left    : 20px;
+    margin-right   : 20px;
+    transition     : 0.3s;
+    border         : none;
+}
+
+.Card .CardImg img {
+    position  : absolute;
+    bottom    : 0;
+    left      : 75%;
+    transform : translateX(-50%);
+    height    : 400px;
+    transition: 0.3s;
+}
+
+.Card .CardContent {
+    position              : relative;
+    width                 : 50%;
+    left                  : 5%;
+    padding               : 20px 20px 20xp 40px;
+    transition            : 0.5s;
+    color                 : #ffffff;
+    transition            : 0.25s;
+    /* -webkit-user-select: none; */
+    /* text-align         : justify; */
+}
+
+
+.Card .CardContent a {
+    position       : relative;
+    display        : inline-block;
+    color          : #111;
+    padding        : 8px 12px;
+    text-align     : center;
+    border-radius  : 10px;
+    background     : rgb(255, 255, 255);
+    margin-top     : 10px;
+    text-decoration: none;
+    transition     : 0.2s;
+}
+
+.Card .CardContent h4 {
+    opacity: 1;
+}
+
+.Card .CardContent p {
+    opacity: 0.8;
+}
+
+.Card .CardContent a:hover {
+    background: rgba(255, 255, 255, 0.1);
+    color     : #fff;
+}
+
+
+.WorkContainer {}
+
+.Row {
+    width          : 100%;
+    display        : flex;
+    justify-content: center;
+    align-items    : stretch;
+    flex-wrap      : wrap;
+
+}
+
+.Image {
+
+    background   : rgba(33, 37, 41);
+    position     : relative;
+    max-width    : 400px;
+    min-width    : 300px;
+    height       : 400px;
+    margin       : 20px;
+    overflow     : hidden;
+    border-radius: 10px;
+}
+
+.Image img {
+    position           : relative;
+    vertical-align     : middle;
+    transition         : 0.6s;
+    transition-property: filter;
+    max-width          : 200%;
+}
+
+.Image:hover img {
+    filter: blur(4px) sepia(1);
+}
+
+.Image .Details {
+    z-index : 1;
+    position: absolute;
+    top     : 0;
+    right   : 0;
+    width   : 100%;
+    height  : 100%;
+}
+
+.Image .Details h4 {
+    text-align            : center;
+    font-size             : 35px;
+    font-weight           : 300;
+    margin-top            : 70px;
+    margin-left           : 1.25rem;
+    margin-right          : 1.25rem;
+    transition            : 0.4s;
+    color                 : rgb(0, 0, 0);
+    transition-property   : transform, color, padding;
+    /* background         : rgba(33, 37, 41, 0.8); */
+    padding               : 10px;
+}
+
+.Image .Details h4 span {
+    font-weight: 800;
+}
+
+.Image:hover .Details h4 {
+    color     : rgb(0, 0, 0);
+    transform : translateY(-30px);
+    background: none;
+    padding   : 0px;
+}
+
+.Image .Details p {
+    margin     : 30px 30px 0 30px;
+    font-size  : 18px;
+    font-weight: 600;
+    text-align : center;
+
+    opacity            : 0;
+    transition         : 0.6s;
+    transition-property: opacity, color, transform;
+}
+
+.Image:hover .Details p {
+    color    : #111;
+    opacity  : 1;
+    transform: translateY(-40px);
+}
+
+.More {
+    position           : absolute;
+    background         : rgba(33, 37, 41, 0.4);
+    width              : 100%;
+    display            : flex;
+    justify-content    : space-between;
+    align-items        : center;
+    padding            : 15px;
+    bottom             : -100px;
+    transition         : 0.6s;
+    transition-property: bottom;
+}
+
+.Image:hover .More {
+    bottom: 0px;
+}
+
+.More .ReadMore {
+    color          : rgb(255, 255, 255);
+    text-decoration: none;
+    font-size      : 20px;
+    font-weight    : 500;
+}
+
+.ImgServicios {
+    width        : 150%;
+    min-width    : 300px;
+    max-width    : 500px;
+    border-radius: 20px;
+}
+
+@media(max-width: 991px) {
+    .Card {
+
+        position     : relative;
+        width        : auto;
+        max-width    : 700px;
+        height       : 320px;
+        margin-bottom: 20px;
+        box-shadow   : 2px 2px 2px 1px rgba(0, 0, 0, 0.5);
+    }
+
+    .Card .CardImg img {
+        height: 360px;
+    }
+
+    .MainName {
+        font-size: 2.2rem !important;
+    }
+
+    .Quien-es {
+        background-image: url('../img/works.jpeg');
+    }
+
+    .Quien-es>.Content-titles {
+        opacity: 1;
+    }
+}
+
+
+@media(max-width: 771px) {
+    .Card {
+        height    : 500px;
+        position  : relative;
+        width     : auto;
+        min-width : 300px;
+        margin-top: 10px;
+    }
+
+    /* .Quien-es h2 {
+        margin-top: -50px
+    } */
+
+    .Card .CardImg img {
+        left  : 50%;
+        height: 320px;
+    }
+
+    .Card .CardContent {
+        position      : relative;
+        display       : flex;
+        flex-direction: column;
+        height        : 500px;
+        position      : relative;
+        width         : auto;
+        min-width     : 300px;
+        padding       : 20px;
+        left          : 0;
+    }
+
+    .Card .CardContent a {
+        width: 90px;
+    }
+
+    .MainName {
+        font-size: 2.0rem !important;
+    }
+}
+
+@media(max-width: 500px) {
+    .Card {
+        width    : auto;
+        min-width: 300px;
+        height   : 600px;
+    }
+
+    .Card .CardContent {
+        top: -8%;
+    }
+
+    .MainName {
+        font-size: 2.0rem !important;
+    }
+
+    .Bar {
+        padding-left : 1.0rem !important;
+        padding-right: 1.0rem !important;
+    }
+}
+
+@media(max-width: 360px) {
+    .MainName {
+        font-size: 1.8rem !important;
+    }
+
+    .Bar {
+        padding-left : 1rem !important;
+        padding-right: 1rem !important;
+    }
+
+    /* button {
+        margin-bottom: 10px;
+    } */
+}
+
+@media(max-width: 334px) {
+
+    button {
+        margin-bottom: 10px;
+        margin-top   : 10px;
+    }
+}
