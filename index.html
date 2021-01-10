@@ -17,6 +17,9 @@
 
     <!-- JQUERY -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <!-- SCROLLREVEAL -->
+    <script src="https://unpkg.com/scrollreveal"></script>
 </head>
 
 <body>
@@ -66,24 +69,25 @@
 
     <header>
         <div class="container-fluid  ContentMenu ">
-            <a name="QUIENES"></a>
             <div class="Quien-es fw-light">
                 <!-- <h2 class="Content-titles fw-light">
                 Quien es
             </h2> -->
 
                 <div class="Card ">
-                    <div class="CardContent">
-                        <h4 class="">!Tu aliado!</h4>
-                        <p>Con más de 20 años de experiencia en el sector de la construcción y
+                    <div class="CardContent" style="position: relative;">
+                        <span id="QUIENES" style="position: absolute;  top: -300px;"></span>
+                        <h4 class="TuAliado">!Tu aliado!</h4>
+                        <p class="ConExperiencia">Con más de 20 años de experiencia en el sector de la construcción y
                             afines, caracterizado por la responsabilidad, amabilidad y el cumplimiento de proyectos con
                             alto
                             grado de calidad.
                         </p>
-                        <a class="fw-normal" href="#CONTACTO">Ver más</a>
+                        <a class="fw-normal VerMas" href="#CONTACTO">Ver más</a>
                     </div>
                     <div class="CardImg">
-                        <img src=" https://www.dosconstructores.com/wp-content/uploads/2018/11/ing.png" alt="">
+                        <img class="CardImgSr"
+                            src=" https://www.dosconstructores.com/wp-content/uploads/2018/11/ing.png" alt="">
                     </div>
                 </div>
 
@@ -216,21 +220,50 @@
     <li> Diseño y construcción</li>
     <li> Pintura </li>
     <li> Arreglos </li> -->
-
+    <hr>
     <section class="container Servicios">
         <h2 class="Content-titles" style="position:relative; ">
             <span id="SERVICIOS" style="position:absolute; top:-200px;"></span>Servicios
         </h2>
-        <div class="row">
-            <div class="col-md-6">
-                <div class="Servicios-left">
-                    <img src="img/yeso.jpeg" alt="" class="ImgServicios">
+        <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+            <ol class="carousel-indicators">
+                <li data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"></li>
+                <li data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"></li>
+                <li data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"></li>
+            </ol>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="img/yeso.jpg" class="d-block w-100" alt="...">
+                    <div class="LabelServicio">
+                        <h4>Decoración</h4>
+                        <p>!Con la mejor calidad!</p>
+                    </div>
                 </div>
-            </div>
-            <div class="col-md-6">
-            </div>
-        </div>
+                <div class="carousel-item">
+                    <img src="img/soldadura.jpg" class="d-block w-100" alt="...">
+                    <div class="LabelServicio">
+                        <h4>Soldadura</h4>
+                        <p>!Profesional!</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="img/enchape.jpg" class="d-block w-100" alt="...">
+                    <div class="LabelServicio">
+                        <h4>Enchape</h4>
+                        <p>!Variedad de diseños!</p>
+                    </div>
+                </div>
 
+            </div>
+            <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </a>
+        </div>
 
     </section>
 
@@ -238,17 +271,16 @@
         <h2 class="Content-titles" style="position: relative;">
             <span id="CONTACTO" style="position: absolute; top: -200px;"></span>Contacto
         </h2>
+        <div class="Contacto-contenido ">
+            <!-- <ul style="display: flex; list-style-type: none;">            -->
+            <ul>
+                <li class="Li"><span><i class="fas fa-user-circle"></i></span> Gilberto Gomez Hernandez</li>
+                <li class="Li"><span><i class="fas fa-mobile-alt"></i></span> 3168283247</li>
+                <li class="Li"><span><i class="fas fa-envelope"></i></span> jgomez109@gmail.com</li>
+            </ul>
+            <img src="img/cartas.jpg" alt="" class="ImgContenido">
+        </div>
 
-        <p> CONTACT ME! </p>
-        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Atque quos ex voluptatum dolores.
-            Tenetur quo
-            voluptates nihil ullam iste perspiciatis ipsam enim aliquam doloribus aperiam eum accusantium
-            cum
-            laboriosam
-            culpa necessitatibus deserunt corporis, doloremque odio magnam labore perferendis delectus
-            distinctio
-            alias.
-            Rerum facere necessitatibus aliquid ducimus explicabo laborum, molestiae quae.</p>
 
     </section>
 
@@ -256,9 +288,16 @@
     </div>
 
 
-    <footer class="blockquote-footer">
-        <div class="text-center display-1">
-            Footer
+    <footer id="Footer">
+        <h2 class="fw-light Prox"> Próximamente </h2>
+        <div class="Contenido-footer">
+            <ul>
+                <a class="Facebook" href="#Footer"><i style="color:#4267B2 ;" class="fab fa-facebook"></i></a>
+                <a class="Youtube" href="#Footer"><i style="color:#FF0000 ;" class="fab fa-youtube"></i></a>
+                <!-- </ul>
+            <p>
+                @Info
+            </p> -->
         </div>
     </footer>
 
@@ -276,7 +315,7 @@
         crossorigin="anonymous"></script>
 
     <script src="js/linkPageDetection.js">    </script>
-
+    <script src="js/scrolling.js"></script>
 </body>
 
 </html>
